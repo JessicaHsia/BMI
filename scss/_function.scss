@@ -1,0 +1,24 @@
+@mixin size($w, $h, $bdr:none) {
+    width: $w;
+    height: $h;
+    border-radius: $bdr;
+}
+
+@mixin font($fz, $fw) {
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+@mixin flex($jc: center, $ai: center, $fd: unset, $fw: unset){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+@mixin posa($t, $l) {
+    position: absolute;
+    top: $t;
+    left: $l;
+}
