@@ -89,6 +89,13 @@ html, body {
     }
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    @include font(9px, 400);
+}
+
 
 
 @media (max-width: 1240px) {
