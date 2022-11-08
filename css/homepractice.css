@@ -22,19 +22,16 @@ html, body {
   left: 5%;
   position: absolute;
 }
-
 .container ul {
   margin-top: 10%;
 }
-
-form {
+.container ul form {
   font-size: 20px;
   font-weight: 600;
   line-height: 50px;
   margin-right: 100px;
 }
-
-input {
+.container ul form input {
   width: 140px;
   height: 30px;
   border-radius: 10px;
@@ -42,8 +39,7 @@ input {
   font-weight: 600;
   text-align: center;
 }
-
-button {
+.container ul button {
   width: 100px;
   height: 30px;
   border-radius: 10px;
@@ -54,14 +50,12 @@ button {
   box-shadow: 5px 5px 5px grey;
   margin: 20px 5px;
 }
-
-caption {
+.container ul caption {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-
-table, tr, th {
+.container ul table, .container ul tr, .container ul th {
   width: 700px;
   height: 40px;
   border-radius: none;
@@ -71,12 +65,10 @@ table, tr, th {
   border-collapse: collapse;
   margin-top: 20px;
 }
-
-td {
+.container ul td {
   width: 60%;
 }
-
-.output {
+.container ul .output {
   border: 2px solid grey;
   color: brown;
   width: 300px;
@@ -94,20 +86,38 @@ td {
   opacity: 1;
   transition: all 2s;
 }
-
-.output-act {
+.container ul .output-act {
   opacity: 0;
   transition: 2s;
 }
-
-.colorgreen {
+.container ul .colorgreen {
   background-color: lightgreen;
 }
-
-.coloryellow {
+.container ul .coloryellow {
   background-color: lightyellow;
 }
-
-.colorred {
+.container ul .colorred {
   background-color: lightcoral;
+}
+
+@media (max-width: 1240px) {
+  .container ul table, .container ul tr, .container ul th {
+    width: 550px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .container ul table, .container ul tr, .container ul th {
+    width: 400px;
+  }
+}
+@media (max-width: 460px) {
+  .container ul table, .container ul tr, .container ul th {
+    width: 350px;
+  }
 }/*# sourceMappingURL=homepractice.css.map */
