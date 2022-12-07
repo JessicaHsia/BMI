@@ -12,7 +12,7 @@ $scan_color_gradient: linear-gradient(200deg, $color_light, $color_dark);
 
 html, body {
     background: $scan_color_gradient;
-    @include size(100%, 100%);
+    @include size(100%, 100vh);
     margin: 0;
     padding: 0;
 }
@@ -89,9 +89,9 @@ html, body {
     }
 }
 
-footer{
+header{
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 500px;
     @include font(9px, 400);
 }
